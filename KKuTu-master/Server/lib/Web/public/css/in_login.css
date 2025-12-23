@@ -1,0 +1,58 @@
+/**
+ * Rule the words! KKuTu Online
+ * Copyright (C) 2017 JJoriping(op@jjo.kr)
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+body{
+	background-color: #232323;
+}
+button{
+	border: none;
+	margin: 8px auto;
+	width: 200px;
+	height: 30px;
+	cursor: pointer;
+	box-shadow: 0px 2px 2px #141414;
+}
+#with-google span{ display: block; }
+.login-with{
+	padding-top: 30px;
+	margin: 30px 0px;
+	text-align: center;
+}
+.login-legal{
+	padding-top: 50px;
+	color: #BBBBBB;
+	font-size: 11px;
+	text-align: center;
+}
+.login-legal a{ color: #DDDDDD; }
+
+form.login-guest {
+  margin: 40px auto 0;      /* 위에서 40px 떨어지고, 좌우 자동 → 가로 중앙 */
+  width: fit-content;       /* 폼 너비를 내용에 딱 맞게 */
+  display: flex;
+  flex-direction: column;   /* 인풋 위, 버튼 아래 세로 배치 */
+  align-items: center;      /* 안의 요소들 가로 중앙 정렬 */
+  gap: 10px;                /* 인풋이랑 버튼 사이 간격 */
+}
+
+form.login-guest input[name="nick"] {
+  width: 250px;
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 16px;
+}

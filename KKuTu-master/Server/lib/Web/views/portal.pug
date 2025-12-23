@@ -1,0 +1,88 @@
+extends layout
+
+block Subject
+  title= L('title')
+
+block CSS
+  // 기본 끄투 로비 CSS
+  link(rel='stylesheet', href='/css/in_game_kkutu.css')
+
+  // 우리 배너용 추가 스타일
+  style.
+    /* 배너 + 양옆 사진을 가로 한 줄에 정렬 */
+    #main-logo-row {
+      width: 100%;
+      margin-top: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;          /* 👉 여기 숫자로 간격 조절 (px) */
+    }
+
+    #main-logo-row img {
+      display: block;
+    }
+
+    /* 양옆 사진 크기 */
+    #side-left,
+    #side-right {
+      width: 180px;       /* 필요하면 크기 조절 */
+      height: auto;
+    }
+
+    /* 가운데 배너 크기 */
+    #main-logo {
+      max-width: 600px;   /* 배너가 너무 크면 이 값 줄여봐 */
+      height: auto;
+    }
+
+block Middle
+  +separator(5)
+
+  // 상단 : 제목 / 로고 / 메뉴 / 게임 시작 버튼
+  div(style='float: left; width: 100%;')
+    div(style='float: left; padding-left: 70px;')
+      h3#holder= L('title').replace(/\[.+?\]/g, "")
+      img#logo(src='/img/kkutu/short_logo.png')
+    div#menu-bar(style='float: right; margin-top: 25px;')
+      a(
+        target='_blank',
+        href='https://www.youtube.com/watch?v=eIVnOIVt5qA&list=RDeIVnOIVt5qA&start_radio=1',
+        style='background-color: #63A95B;'
+      )= L('sandbox')
+      a(
+        target='_blank',
+        href='https://www.youtube.com/watch?v=bSL0XPCUDVM&t=62s',
+        style='background-color: #4078DC;'
+      )= L('CREATOR')
+    div.jjoriping(style='margin-top: 40px;')
+      img.jjoObj.jjoEyeL(src='/img/jjoeyeL.png', style='left: -270px;')
+      img.jjoObj.jjoNose(src='/img/jjonose.png', style='left: -170px;')
+      img.jjoObj.jjoEyeR(src='/img/jjoeyeR.png', style='left: -70px;')
+      div.jjoDisplayBar(style='width: 325px; height: 85px;')
+        button#game-start.jjo-display= L('gameStart')
+
+  // 오른쪽 : 서버 리스트
+  div(style='float: right; margin-top: -120px; width: 50%;')
+    div.server-list-box
+      h3.server-list-title
+        a#server-refresh
+          +FA('refresh')
+          +Expl(L('serverRefresh'))
+        label= L('serverList')
+        label#server-total(style='color: #AAA; font-size: 13px;')
+      div#server-list
+  
+  +separator(30)
+
+  // 가운데 : 한탕끄투 배너
+  #main-logo-row
+    img#side-left(src='/img/left_pic.png', alt='왼쪽 사진')
+    img#main-logo(src='/img/kkutu_banner.png', alt='한탕끄투 로고')
+    img#side-right(src='/img/right_pic.png', alt='오른쪽 사진')
+
+  +separator(80)
+
+block Bottom
+  div.bottom-legal!= L('dictionarySupport')
+  div.bottom-legal!= L('etcSupport')

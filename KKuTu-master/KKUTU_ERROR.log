@@ -1,0 +1,25 @@
+This is an error log file of the game server.
+You may use like `tail -f KKUTU_ERROR.log` to watch this.
+:8496 [2025. 12. 11. 오후 11:46:28] ERROR: TypeError: Cannot read properties of null (reading '_id')
+TypeError: Cannot read properties of null (reading '_id')
+    at C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\Game\games\jaqwi.js:62:27
+    at exports.Tail.go (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\sub\lizard.js:43:16)
+    at C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\Game\games\jaqwi.js:249:21
+    at callback (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\sub\collection.js:316:13)
+    at Query.preCB (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\sub\collection.js:298:6)
+    at Query.handleReadyForQuery (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:508:28)
+    at C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg-protocol\dist\parser.js:40:17):8496 [2025. 12. 11. 오후 11:49:30] ERROR: TypeError: Cannot read properties of null (reading '_id')
+TypeError: Cannot read properties of null (reading '_id')
+    at C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\Game\games\jaqwi.js:62:27
+    at exports.Tail.go (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\sub\lizard.js:43:16)
+    at C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\Game\games\jaqwi.js:249:21
+    at callback (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\sub\collection.js:316:13)
+    at Query.preCB (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\sub\collection.js:298:6)
+    at Query.handleReadyForQuery (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:508:28)
+    at C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\user\OneDrive\Desktop\KKUTU\HanTangKKUTU_1.0-main\KKuTu-master\Server\lib\node_modules\pg-protocol\dist\parser.js:40:17)
